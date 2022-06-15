@@ -2,8 +2,9 @@
 
 🚦 First Concept of the data-driven GitHub issue extention/component on the FDND Website.
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-<!-- 
-## Inhoudsopgave
+![Screenshot Prototype]()
+
+## 🚀 Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
@@ -12,19 +13,45 @@
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
-## Beschrijving
+## 👉 Kenmerken
+
+### 💻 Client-Side
+  * 🧭 HTML
+  * 🏦 CSS
+  * 🏥 JavaScript
+  
+### 💾 Server-Side
+ * [🏛️ Node.js](https://nodejs.dev/)
+ * [🚣 Express](https://www.npmjs.com/package/express)
+
+### ‼️ Dependencies
+ * [🧦 Socket.io](https://www.npmjs.com/package/socket.io)
+ * [🐰 Nodemon](https://www.npmjs.com/package/nodemon)
+ * [🏡 Ejs](https://www.npmjs.com/package/ejs)
+ * [📹 Compression](https://www.npmjs.com/package/compression)
+ * [🖥️ Cssnano](https://www.npmjs.com/package/cssnano)
+ * [💤 Postcss](https://www.npmjs.com/package/postcss)
 
 
-## Kenmerken
-Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? 
+## 🪢 Installatie & Gebruik
+```
+# Cloning the repository
+git clone https://github.com/M4TThys123/SPRINT-11-Realtime-Web-App.git
 
-## Installatie
+# Moving to the folder
+cd SPRINT-11-Realtime-Web-App
 
-## Gebruik
+# Install NPM Dependencies
+npm install
 
-## Bronnen
--->
-## Licentie
+# Install NPM packages
+npm run start
+```
+
+## 🌐 Bronnen
+* []()
+
+## 🔒 Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
