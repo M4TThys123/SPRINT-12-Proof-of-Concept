@@ -162,7 +162,9 @@ a{
 .link a{
     color: #56a6fe;
 }
-
+.link *, .issues *{
+    margin-right: .25em;
+}
 .issues{
     margin-top: 1.5em;
     margin-bottom: .5em;
@@ -199,11 +201,53 @@ a{
     min-width: 30em;
     max-height: 20em;
     padding: .25em;
-
-
-    
     border: var(--gh-header) 1px solid;
 }
 
+input{
+    width: 100%;
+    background-color: var(--gh-form);
+    font-size: 16px;
+    padding: 5px 12px;
+    line-height: 20px;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 6px
+}
 
+#comment{
+    max-height: 440px; 
+    height: 199px;
+}
 
+.btn-wrapper{
+    justify-content: flex-end;
+    align-items: ;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid;
+      border-top-color: currentcolor;
+      border-right-color: currentcolor;
+      border-bottom-color: currentcolor;
+      border-left-color: currentcolor;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+
+    color: rgba(255, 255, 255, .5);
+    background-color: rgba(35, 134, 54, 0.6);
+    border-color: rgba(240, 246, 252, 0.1) ;
+
+  }
