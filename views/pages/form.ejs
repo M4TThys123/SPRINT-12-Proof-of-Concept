@@ -1,7 +1,6 @@
 <%- include('../includes/head') %>
 <%- include('../includes/header') %>
-
-<main class="container">
+<main class="contianer">
     <section class="flip-card">
         <div class="flip-card-inner">
             <section class="flip-card-front section blue-on-green" id="5-leerresultaat">
@@ -31,12 +30,9 @@
         
                 <section class="top">
                     <section class="link middle flex">
-                        <a href="https://github.com/M4TThys123/SPRINT-12-Proof-of-Concept">
-                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo color-fg-muted mr-2" fill="">
-                                <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
-                            </svg>
-                        </a>
-                        
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo color-fg-muted mr-2" fill="">
+                            <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+                        </svg>
         
                         <span class="author flex-self-stretch" itemprop="author">
                             <a class="url fn" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/fdnd/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/fdnd">fdnd </a>
@@ -50,7 +46,7 @@
                     </section>
         
                     <section class="issues">
-                        <a id="issues-tab" href="https://github.com/fdnd/docs.fdnd.nl/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /fdnd/docs.fdnd.nl/issues" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g i" data-ga-click="Repository, Navigation click, Issues tab" aria-current="page" data-view-component="true" class="flex">
+                        <a id="issues-tab" href="/fdnd/docs.fdnd.nl/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /fdnd/docs.fdnd.nl/issues" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g i" data-ga-click="Repository, Navigation click, Issues tab" aria-current="page" data-view-component="true" class="flex">
                             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
                                 <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path><path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path>
                             </svg>
@@ -66,14 +62,14 @@
                         <section class="title">
                             <input type="text" name="title" id="title" placeholder="Title">
                         </section>
-
-                        <textarea name="body" id="body" placeholder="Leave a comment" aria-label="Comment body" dir="auto" style="max-height: 457px; height: 198px;"></textarea>
+            
+                        <!-- Issue -->
+                        <textarea name="body" id="issue_body" placeholder="Leave a comment" aria-label="Comment body" class="form-control input-contrast comment-form-textarea js-comment-field js-paste-markdown js-task-list-field js-quick-submit js-size-to-fit js-session-resumable js-saved-reply-shortcut-comment-field" dir="auto" style="max-height: 457px; height: 198px;">https://github.com/fdnd/docs/leerresultaten/6-gedragscriteria.md</textarea>
             
                         <!-- Submit Button -->
-                        <section class="flex btn-wrapper">
+                        <section class="flex btn-wrapper">                            
                             <!-- <button type="submit" class="submit btn">Submit new issue</button> -->
-                        <input type="submit" class="submit btn" value="Submit new issue">
-                            
+                            <input type="submit" class="submit btn" value="Submit new issue">
                         </section>
                     </form>
                 </section>
@@ -84,12 +80,7 @@
             </section>
         </div>
     </section> 
-
-
-    
-
-
 </main>
 
-
-<%- include('../includes/footer') %>   
+<script defer src="./scripts/endPoint.js"></script>
+<%- include('../includes/header') %>

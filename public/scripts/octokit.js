@@ -1,10 +1,10 @@
 console.log('octokit is gelinkt')
 
-const graphqlWithAuth = graphql.defaults({
-  headers: {
-    authorization: `token secret123`,
-  },
-});
+// const graphqlWithAuth = graphql.defaults({
+//   headers: {
+//     authorization: `token secret123`,
+//   },
+// });
 
 // const { repository } = await graphqlWithAuth(`
 //   {

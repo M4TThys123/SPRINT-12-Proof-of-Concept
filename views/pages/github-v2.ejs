@@ -1,0 +1,79 @@
+<section class="flip-card">
+    <div class="flip-card-inner">
+        <section class="flip-card-front section blue-on-green" id="5-leerresultaat">
+    
+
+    
+    
+            <i class='bx bx-info-circle info__hover openIssue' aria-hidden="true" 
+            data-tooltip="Is er iets mis? Schiet dan A.U.B. een issue in."></i>
+            
+            
+        </section>
+        <section class="flip-card-back section github-style ">
+            <header class="gh-header">
+                <div class="header-logo">
+                    <a class="Header-link " href="https://github.com/" data-hotkey="g d" aria-label="Homepage " data-turbo="false" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}">
+                <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                  <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+              </svg>
+              </a>
+              
+                  </div>
+                <div class="modal__close closeIssue" title="Close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </header>
+    
+            <section class="top">
+                <section class="link middle flex">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo color-fg-muted mr-2" fill="">
+                        <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+                    </svg>
+    
+                    <span class="author flex-self-stretch" itemprop="author">
+                        <a class="url fn" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/fdnd/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/fdnd">fdnd </a>
+                    </span>
+    
+                    <span class="mx-1 flex-self-stretch color-fg-muted">/</span>
+    
+                    <strong itemprop="name" class="mr-2 flex-self-stretch">
+                        <a data-pjax="#repo-content-pjax-container" href="/fdnd/docs.fdnd.nl">docs.fdnd.nl</a>
+                    </strong>
+                </section>
+    
+                <section class="issues">
+                    <a id="issues-tab" href="/fdnd/docs.fdnd.nl/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /fdnd/docs.fdnd.nl/issues" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g i" data-ga-click="Repository, Navigation click, Issues tab" aria-current="page" data-view-component="true" class="flex">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
+                            <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path><path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path>
+                        </svg>
+    
+                        <span data-content="Issues">Issues</span>
+                    </a>
+                </section>
+            </section>
+            
+            <section class="form-container">
+                <!-- GraphQL api action="/fdnd/docs.fdnd.nl/issues" -->
+                <form id="createGitHubissue" action="/fdnd/docs.fdnd.nl/issues" method="post">
+                    <!-- Title -->
+                    <section class="title">
+                        <input type="text" name="title" id="title" placeholder="Title">
+                    </section>
+        
+                    <!-- Issue -->
+                    <textarea name="body" id="issue_body" placeholder="Leave a comment" aria-label="Comment body" class="form-control input-contrast comment-form-textarea js-comment-field js-paste-markdown js-task-list-field js-quick-submit js-size-to-fit js-session-resumable js-saved-reply-shortcut-comment-field" dir="auto" style="max-height: 457px; height: 198px;">https://github.com/fdnd/docs/leerresultaten/6-gedragscriteria.md</textarea>
+        
+                    <!-- Submit Button -->
+                    <section class="flex btn-wrapper">
+                        <button type="submit" class="submit btn">Submit new issue</button>
+                    </section>
+                </form>
+            </section>
+            
+    
+    
+        
+        </section>
+    </div>
+</section> 
