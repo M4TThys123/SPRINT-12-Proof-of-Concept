@@ -1,7 +1,7 @@
 {
   "name": "sprint-12-proof-of-concept",
   "version": "1.0.0",
-  "description": "🚦 First Concept of the data-driven GitHub issue extention/component on the FDND Website. <!-- Geef je project een titel en schrijf in één zin wat het is --> ![Screenshot Prototype]()",
+  "description": "First Concept of the data-driven GitHub issue extention/component on the FDND Website. <!-- Geef je project een titel en schrijf in één zin wat het is --> ![Screenshot Prototype]()",
   "main": "main.js",
   "scripts": {
     "dev": "nodemon main.js"
@@ -22,11 +22,7 @@
     "compression": "^1.7.4",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
-    "express": "^4.18.1",
-    "express-graphql": "^0.12.0",
-    "graphql": "^16.5.0",
-    "graphql.js": "^0.6.8",
-    "node-fetch": "^3.2.6"
+    "express": "^4.18.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
