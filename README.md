@@ -3,6 +3,7 @@
 First Concept of the data-driven GitHub issue extention/component on the FDND Website.
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 ![Screenshot Prototype](https://github.com/M4TThys123/SPRINT-12-Proof-of-Concept/blob/main/docs/afb/Avatars-03.jpg)
+![form](https://github.com/M4TThys123/SPRINT-12-Proof-of-Concept/blob/main/docs/afb/form.png)
 
 ## 🚀 Inhoudsopgave
 
